@@ -1,0 +1,713 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+   
+
+
+
+
+/* Hero Section */
+/* Responsive styles for Hero Section */
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   background-color: rgba(246, 254, 247, 1);
+   width: 1917.33px;
+  height: 2148px;
+  padding: 120px 252px 120px 252px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 71.98px;
+  align-items: center;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1413.33px;
+  height: 1692px;
+  gap: 72px;
+}
+
+.hero div > div {
+  display: flex;
+  flex-direction: row; /* Arrange internal elements in a column */
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  max-width: 1413.33px;
+  height: 468px;
+}
+
+.flex-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 1413.33px;
+  height: 468px;
+}
+
+.flex-div > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 644px;
+  height: 366.56px;
+  gap: 52px;
+}
+
+.Crush-image {
+  max-width: 405px;
+  height: 405px;
+  top: 31.26px;
+  left: 18px;
+  box-shadow: 10px 10px 20px #f6fef7; /* Shadow with color */
+
+  box-shadow: 2px 2px 2px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* .hero div img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0.2px 0.2px 0.5px rgba(109, 108, 107, 0.5);
+} */
+
+.hero div button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero div button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+/* @media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero div {
+    gap: 1rem;
+  }
+
+  .hero div > div {
+    max-width: 250px;
+  }
+
+  .hero div img {
+    max-width: 120px;
+  }
+
+  .hero div button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+} */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero div > div {
+    max-width: 100%;
+    gap: 0.5rem;
+  }
+
+  .hero div img {
+    max-width: 100px;
+  }
+  .flex-div > div {
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 644px;
+    height: 366.56px;
+    gap: 52px;
+  }
+
+  .hero div button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+
+
+/* General Carousel Styles */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.carousel-header{
+  margin-bottom: 10%;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px; /* Optional, you can set a max-width for the carousel items */
+    margin: 0 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Make the carousel responsive for smaller screens */
+@media (max-width: 768px) {
+    .carousel-item {
+        max-width: 80%; /* Make the carousel items more narrow on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ensure carousel images are displayed as a slider */
+    .carousel-images {
+        display: flex; /* Make the items slide horizontally */
+        flex-wrap: nowrap; /* Ensure items don't wrap */
+        overflow: hidden;
+    }
+
+    .carousel-item {
+        max-width: 100%; /* Make the carousel items full width on very small screens */
+        flex: 0 0 100%; /* Ensure each carousel item takes full width */
+    }
+
+    .carousel-btn {
+        font-size: 18px; /* Make navigation buttons smaller */
+        padding: 8px;
+    }
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+  
+  /* Accordion Styles */
+   .faq div {
+    margin: 2rem;
+   
+  }
+   .faq{
+    width: 1918.67px;
+    height: 840px;
+    padding-top: 120px;
+    padding-left: 252px;
+    padding-right: 252px;
+    padding-bottom: 120px;
+    background-color: rgba(255, 255, 255, 1);
+   }
+   .faq div >h2{
+     font-size: 64px;
+      font-weight: 700;
+      line-height:72px ;
+
+    }
+
+    .accordion{
+      width: 1414.67px;
+      height: 600px;
+      gap: 72px;
+    }
+  .accordion-item {
+
+    width: 1413.33px;
+    height: 48px;
+    gap: 58px;
+  }
+  
+  .accordion-header {
+    font-weight: 500;
+    line-height: 47.99px;
+    font-size: 24px;
+}
+ 
+
+  
+  @media (max-width: 480px) {
+    .faq{
+      width: 360px;
+      height: 549px;
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .faq div >h2{
+      font-size: 32px;
+       font-weight: 700;
+       line-height:38px ;
+ 
+     }
+     .accordion{
+      height: 288px;
+      width: 296px;
+      gap: 20px;
+     }
+
+     .accordion-item{
+      width: 296px;
+      height: 48px;
+     }
+
+     .accordion-header{
+      font-size: 16px;
+      font-weight: 500px;
+      line-height: 24px;
+     }
+} 
+  
+ /* CSS for Crush-section */
+ .Crush-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+  background-color: #E5F1E3;
+  text-align: center;
+}
+
+.Crush-section > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+ 
+}
+.Crush-section div>div{
+  height: 517.55px;
+  width: 479.91px;
+}
+
+.crush-p {
+  font-size: 64px;
+  font-weight: 700  ;
+  width: 617px;
+  height: 168px;
+  top: 155.66px;
+  left: 253.33px;
+  gap: 44px;
+  margin-top: 30%;
+}
+
+
+.Crush-image {
+  width: 517.55px;
+  height: 479.91px;
+  left: 1141.83px;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+  .Crush-section > div {
+      flex-direction: column;
+  }
+
+  .Crush-section div p {
+      font-size: 1.2rem;
+  }
+} */
+
+@media (max-width: 480px) {
+  .Crush-section {
+      background-color: rgba(229, 241, 227, 1);
+      height: 480px ;
+      width: 360px;
+      border: 2px solid black;
+  }
+  .Crush-section div {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .Crush-section div div h2{
+    width: 296px;
+    height: 129px;
+   
+  }
+
+  .crush-p {
+    margin-top: 80%;
+    margin-left: 22%;
+      font-size: 32px;
+      line-height: 38px;
+      align-items: center;
+  }
+
+  .Crush-image {
+      width: 360px;
+      height: 237px;
+      top: 243px;
+      left: -0px;
+      margin-left: 10%;
+  }
+ 
+}
+
+.circle-1, .circle-2, .circle-3 {
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments for circles */
+/* @media (max-width: 768px) {
+  .circle-1 {
+    border: 2px solid #17C95F;
+    border-radius: 70%;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-2 {
+    border: 2px solid #17C95F;
+    border-radius: 50%;
+    width: 517.55px;
+    height: 479.91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Crush-image {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+ 
+
+} */
+
+  
+/* card csss header */
+/* General Reset */
+body, h1, h2, h4, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Section Header Styling */
+.first_header_section{
+   width: 1462px;
+   height: 62px;
+   top: 41.61px;
+   left: 229.22px;
+}
+.header-main{
+   width: 1275.72px;
+   height: 32px;
+   top: 58.95px;
+   left: 322.35px;
+   gap: 845px;
+   display: flex;
+}
+.logo{
+  width: 36.69px;
+  height: 19.3px;
+  top: -0.08px;
+}
+.header-main-div2{
+  display: flex; justify-content: space-around; width: 322.72px; height: 32px;
+}
+
+.site-name{
+  width: 64.54px;
+  height: 21.79px;
+  top: 3.24px;
+  left: 43.34px;
+}
+.desc{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color:rgba(120, 127, 136, 1) ;
+}
+.apple-logo{
+  width: 32px;
+  height: 32px;
+  border-radius: 6.62px;
+  padding: 17.66px;
+  background-color:rgba(30, 31, 35, 1) ;
+}
+.dotted-line {
+  border: none; /* Remove default border */
+  border-top: 2px dotted #3498db; /* Dotted line with color */
+  width: 80%; /* Line width */
+  margin: 20px auto; /* Center the line with margins */
+}
+.section-header {
+  background-color: #f6f8fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.check-box{
+  height: 24px;
+  width: 1198.03px;
+  gap: 80px;
+  display: flex;
+}
+.check-box-div{
+  width: 339.98px;
+  height: 24px;
+  gap: 28.68px;
+  display: flex;
+}
+.check-box-div img{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(23, 201, 95, 1);
+}
+.check-box-div p{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.section-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card Styling */
+.div-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  
+  align-items: center;
+  flex-direction: row;
+  max-width: 200px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .section-header-content {
+      justify-content: center;
+  }
+
+  .section-header h2 {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header h2 {
+      font-size: 1.5rem;
+  }
+
+  .card img {
+      max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header-content {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .section-header h2 {
+      font-size: 1.3rem;
+  }
+
+  .card img {
+      max-width: 100px;
+  }
+
+  .card h4 {
+      font-size: 0.9rem;
+  }
+}
+
+/* General styles for the second_header_uppar section */
+.second_header_uppar {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px; /* Spacing between flex items */
+  background-color: #f0c7c7;
+}
+
+/* Styling for child div elements */
+.second_header_uppar div {
+  flex: 1 1 30%; /* Each child takes 30% width and can shrink/grow */
+  text-align: center; /* Center-align content */
+}
+
+.second_header_uppar div img {
+  max-width: 40%; /* Ensure the image is responsive */
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners to images */
+}
+
+/* Responsive design for tablets and smaller devices */
+@media (max-width: 768px) {
+  .second_header_uppar {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center-align text for all children */
+  }
+
+  .second_header_uppar div {
+      flex: 1 1 100%; /* Each child takes full width */
+  }
+}
+
+/* Additional styles for smaller devices (mobile-first approach) */
+@media (max-width: 480px) {
+  .second_header_uppar {
+      padding: 10px; /* Reduce padding on smaller screens */
+      gap: 10px; /* Reduce gap between items */
+  }
+
+  .second_header_uppar div {
+      padding: 10px; /* Add some spacing inside each child */
+  }
+
+  .second_header_uppar div img {
+      border-radius: 5px; /* Smaller rounded corners for small screens */
+  }
+}
