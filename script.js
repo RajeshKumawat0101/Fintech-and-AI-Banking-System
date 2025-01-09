@@ -1,31 +1,24 @@
-let currentIndex = 0;
-
+const carousel = document.querySelector(".carousel-images");
+const items = document.querySelectorAll(".carousel-item");
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
-const carouselImages = document.querySelector(".carousel-images");
-const carouselItems = document.querySelectorAll(".carousel-item");
 
-const totalItems = carouselItems.length;
+let currentIndex = 0;
 
 function updateCarousel() {
-    // Move the carousel to the appropriate position based on currentIndex
-    carouselImages.style.transform = `translateX(-${currentIndex * 10}%)`;
+    const offset = -currentIndex * 10; // Offset for each slide
+    carousel.style.transform = `translateX(${offset}%)`;
 }
 
 prevButton.addEventListener("click", () => {
-    // Move to the previous item, loop back to the last item if needed
-    currentIndex = (currentIndex === 0) ? totalItems - 1 : currentIndex - 1;
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
     updateCarousel();
 });
 
 nextButton.addEventListener("click", () => {
-    // Move to the next item, loop back to the first item if needed
-    currentIndex = (currentIndex === totalItems - 1) ? 0 : currentIndex + 1;
+    currentIndex = (currentIndex + 1) % items.length;
     updateCarousel();
 });
 
-
-
-
-
-  
+// Initialize carousel on page load
+updateCarousel();

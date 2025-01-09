@@ -20,12 +20,501 @@ body {
 }
    
 
+/* Section Header Styling */
+.main{
+  width: 1920px;
+  height: 1230.67px;
+  top: 0.15px;
+  left: 0.21px;
+  background: linear-gradient(319.26deg, #FEEFC7 -2.44%, #E3F1E7 75.19%);
+  
+ }
+
+.first_header_section{
+   width: 1462px;
+   height: 62px;
+   top: 41.61px;
+   left: 229.22px;
+}
+.header-main{
+   width: 1275.72px;
+   height: 32px;
+   top: 58.95px;
+   left: 322.35px;
+   gap: 845px;
+   display: flex;
+}
+.logo{
+  width: 36.69px;
+  height: 19.3px;
+  top: -0.08px;
+}
+.header-main-div1{
+  display: flex; width: 108px; height: 25.04px; justify-content: space-around;
+}
+.header-main-div2{
+  display: flex; justify-content: space-around; width: 322.72px; height: 32px;
+}
+
+.site-name{
+  position: relative;
+  width: 64.54px;
+  height: 21.79px;
+  top: 3.24px;
+  left: 43.34px;
+}
+
+.desc{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color:rgba(120, 127, 136, 1) ;
+}
+.apple-logo{
+  width: 32px;
+  height: 32px;
+  border-radius: 6.62px;
+  padding: 17.66px;
+  background-color:rgba(30, 31, 35, 1) ;
+}
+.dotted-line {
+  border: none; /* Remove default border */
+  border-top: 2px dotted #3498db; /* Dotted line with color */
+  width: 80%; /* Line width */
+  margin: 20px auto; /* Center the line with margins */
+}
+.section-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.second_header_uppar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+   height: 289px;
+   width: 1330px;
+   top: 189px;
+   left: 295px;
+   gap: 72px;
+
+}
+
+/* Styling for child div elements */
+.second_header_uppar-div1 {
+    width: 1330px;
+    height: 193px;
+}
+.second_header_uppar-div1 h1{
+   font-size: 92px;
+   font-weight: 700;
+   line-height: 96px;
+   font-style: Gilroy;
+   color: rgba(14, 30, 20, 1);
+}
+.second_header_uppar-div1 span{
+  font-weight: 400;
+  font-size: 92px;
+  line-height: 96px;
+  color: rgba(14, 30, 20, 1);
+}
+
+.check-box{
+  height: 24px;
+  width: 1198.03px;
+  gap: 80px;
+  display: flex;
+}
+.check-box-div{
+  margin-top: 120px;
+  width: 339.98px;
+  height: 24px;
+  gap: 28.68px;
+  display: flex;
+}
+.check-box-div img{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(23, 201, 95, 1);
+}
+.check-box-div p{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.check-box button{
+  display: none;
+}
+.header-image1{
+  position: relative;
+   width: 1412px;
+   height: 799.25px;
+   top: 566.53px;
+   border-radius: 79.92px;
+   box-shadow:10px 10px 10px rgba(246, 254, 247, 1) ;
+}
+
+.header-image2{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 722.96px;
+  left: 1647px;
+  margin-top: 700px;
+  margin-left: 130px;
+  border-radius: 200px;
+}
+/* Responsive design for tablets and smaller devices */
+
+
+/* Additional styles for smaller devices (mobile-first approach) */
+@media (max-width: 480px) {
+  .second_header_uppar {
+    position: relative;
+     width: 296px;
+     height: 295.28px;
+     top: 89px;
+     left: 32px;
+     gap: 24px;
+     margin-left: 40%;
+  }
+
+  .second_header_uppar-div1 {
+       width: 296px;
+       height: 115px;
+
+  }
+  .second_header_uppar-div1 h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  .second_header_uppar-div1 span{
+    font-size: 32px;
+    line-height: 38px;
+  }
+ .check-box{
+  width: 280px;
+  height: 92.28px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+ }
+ .check-box-div{
+  margin-top: 0;
+  width: 280px;
+  height: 14.76px;
+  gap: 17.94px;
+ }
+ .check-box-div p{
+  font-size: 14.35px;
+  font-weight: 500;
+  line-height: 14.35px;
+ }
+ .check-box-div img{
+  width: 17.22px;
+  height: 14.76px;
+ }
+ .check-box button{
+    display: block;
+    height: 40px;
+    width: 296px;
+    border-radius: 11px;
+    padding: 12px 36px 12px 36px;
+    gap: 10px;
+    background-color: rgba(14, 30, 20, 1) ;
+    color: aliceblue;
+ }
+
+ .header-image1{
+  width: 260px;
+    height: 335px;
+    top: 426.5px;
+    left: 50px;
+    border-radius: 20.38px;
+    
+ }
+ .header-image2{
+   display: none;
+   margin: 0;
+ }
+ 
+}
 
 
 
-/* Hero Section */
-/* Responsive styles for Hero Section */
-/* Hero Section */
+
+@media (max-width: 480px) {
+  .first_header_section{
+    width: 337px;
+    height: 30px;
+    top: 21px;
+    left: 12px;
+    background-color:rgba(255, 255, 255, 0.12) ;
+  }
+  /* .header-main{
+    width: 306px;
+    height: 16px;
+    top: 29px;
+    left: 32px;
+    gap: 75px;
+  } */
+  .header-main-div1{
+    width: 66.08px;
+    height: 15.32px;
+  }
+
+  .logo{
+    width: 22.45px;
+    height: 11.81px;
+    top: -0.05px;
+  }
+  .site-name{
+    position: static;
+    width: 39.49px;
+    height: 13.33px;
+    top: 1.98px;
+    left: 26.52px;
+  }
+  .header-main-div2{
+    width: 154.53px;
+    height: 15.39px;
+    gap: 2.87px;
+  }
+
+  .desc{
+    display: none;
+  }
+  .apple-logo{
+    width: 15.39px;
+    height: 15.39px;
+    border-radius: 3.18px;
+  }
+
+} 
+
+
+/* body-container css */
+.body-container {
+  width: 100%;
+  height: auto; /* Use auto for dynamic height based on content */
+  position: absolute;
+  top: 1365.77px;
+  left: 0.21px;
+}
+
+/* Section Header Content */
+.section-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  padding: 120px 10%;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.section-header-content div {
+  width: 100%;
+  max-width: 1416px;
+  height: auto;
+  gap: 72px;
+}
+
+/* Card Styling */
+.div-card1 {
+  width: 100%;
+  max-width: 1414px;
+  height: auto;
+}
+
+.div-card1 h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.div-card1 span {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.div-card2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1416px;
+  height: auto;
+  gap: 36px;
+}
+
+.div-card2 button {
+  display: none;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  max-width: 450px;
+  gap: 12px;
+}
+
+.card div img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card div p {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(120, 127, 136, 1);
+}
+
+/* Responsive Breakpoints */
+
+/* Laptop Screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .section-header-content {
+    padding: 80px 5%;
+  }
+
+  .div-card1 h2,
+  .div-card1 span {
+    font-size: 56px;
+    line-height: 1.2;
+  }
+
+  .div-card2 {
+    gap: 24px;
+  }
+
+  .card {
+    max-width: 360px;
+    gap: 10px;
+  }
+
+  .card div img {
+    width: 120px;
+  }
+
+  .card div p {
+    font-size: 20px;
+  }
+
+  .div-card2 button {
+    display: block;
+    height: 45px;
+    width: 180px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: rgba(14, 30, 20, 1);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px auto 0;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-header-content {
+    padding: 60px 5%;
+  }
+
+  .div-card1 h2,
+  .div-card1 span {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .div-card2 {
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 300px;
+    gap: 8px;
+  }
+
+  .card div img {
+    width: 100px;
+  }
+
+  .card div p {
+    font-size: 18px;
+  }
+
+  .div-card2 button {
+    display: block;
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: rgba(14, 30, 20, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px auto 0;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .section-header-content {
+    width: 100%;
+    padding: 40px 16px;
+    gap: 10px;
+  }
+
+  .div-card1 h2,
+  .div-card1 span {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .div-card2 {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .div-card2 button {
+    display: block;
+    width: 100%;
+    max-width: 296px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgba(14, 30, 20, 1);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px auto 0;
+  }
+}
+
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -37,15 +526,31 @@ body {
   padding: 120px 252px 120px 252px;
   text-align: center;
 }
+.hero-container {
+  width: 1413.33px;
+  height: 1908px;
+}
 
-.hero h2 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 71.98px;
+.hero-heading{
+  width: 1413px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.hero div {
+.hero-heading h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 71.98px;
+}
+.hero-heading span {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 71.98px;
+}
+
+.flex_div_main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -56,27 +561,14 @@ body {
   gap: 72px;
 }
 
-.hero div > div {
-  display: flex;
-  flex-direction: row; /* Arrange internal elements in a column */
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  max-width: 1413.33px;
-  height: 468px;
-}
-
 .flex-div {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
+  gap: 1rem;
   width: 1413.33px;
   height: 468px;
 }
 
-.flex-div > div {
+/* .flex-div > div {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -85,16 +577,37 @@ body {
   width: 644px;
   height: 366.56px;
   gap: 52px;
+} */
+
+.flex-div-1{
+  width: 644px;
+  height: 366px;
+  gap: 52px;
 }
 
+.flex-div-1 p{
+  font-size: 42px;
+  font-weight: 700;
+  color:rgba(56, 60, 67, 1) ;
+}
+
+.flex-div-1 span{
+  font-size: 32px;
+  font-weight: 400;
+  color:rgba(120, 127, 136, 1) ;
+}
+.flex-div-1 button{
+  width: 154px;
+  height: 67.56px;
+  border-radius: 16px;
+  padding: 10.67px;
+}
 .Crush-image {
   max-width: 405px;
   height: 405px;
   top: 31.26px;
   left: 18px;
-  box-shadow: 10px 10px 20px #f6fef7; /* Shadow with color */
-
-  box-shadow: 2px 2px 2px;
+  box-shadow: 10px 10px 10px #f6fef7; /* Shadow with color */
 }
 
 button {
@@ -111,178 +624,166 @@ button:hover {
   background-color: #45a049;
 }
 
-/* .hero div img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0.2px 0.2px 0.5px rgba(109, 108, 107, 0.5);
-} */
-
-.hero div button {
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero div button:hover {
-  background-color: #0056b3;
-}
-
-/* Responsive Styles */
-/* @media (max-width: 768px) {
-  .hero {
-    padding: 1.5rem;
-  }
-
-  .hero h2 {
-    font-size: 1.8rem;
-  }
-
-  .hero div {
-    gap: 1rem;
-  }
-
-  .hero div > div {
-    max-width: 250px;
-  }
-
-  .hero div img {
-    max-width: 120px;
-  }
-
-  .hero div button {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-} */
 
 @media (max-width: 480px) {
   .hero {
-    padding: 1rem;
+     margin-top: 850px;
+     width: 360px;
+     height: 1592px;
+     padding: 60px 32px 60px 32px;
+     background-color: rgba(246, 254, 247, 1);
   }
-
-  .hero h2 {
-    font-size: 1.5rem;
+  .flex_div_main{
+    display: flex;
+    justify-content: space-between;
   }
-
-  .hero div > div {
-    max-width: 100%;
-    gap: 0.5rem;
+  .hero-container {
+     width: 296px;
+     height: 1472px;
+     gap: 32px;
   }
-
-  .hero div img {
-    max-width: 100px;
-  }
-  .flex-div > div {
-    flex: 0;
+ .hero-heading{
+    width: 296px;
+    height: 77px;
+ }
+ .hero-heading h2{
+  font-size: 32px;
+ }
+ .hero-heading span{
+  font-size: 32px;
+ }
+ 
+ .flex-div{
+    width: 296px;
+    height: 368px;
+    gap: 24px;
     display: flex;
     flex-direction: column;
+ }
+ .flex-div-1{
+    width: 296px;
+    height: 192px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    width: 644px;
-    height: 366.56px;
-    gap: 52px;
+ }
+  
+ .flex-div-1 h2{
+   font-size: 18px;
+   font-weight: 700;
+   color: rgba(22, 20, 20, 1);
+ }
+ .flex-div-1 span{
+  font-size: 16px;
+  font-weight: 400;
+  color:rgba(120, 127, 136, 1)
+ }
+.flex-div-1 button{
+  width: 119px;
+  height: 44px;
+  padding: 10px ;
+}
+
+  .flex-div div img {
+    width: 296px;
+    height: 152px;
+    border-radius: 27px;
+    background-color:rgba(255, 255, 255, 1) ;
+    box-shadow: 0 16px rgba(0, 0, 0, 0.08);
   }
 
-  .hero div button {
-    padding: 0.4rem;
-    font-size: 0.8rem;
-  }
 }
 
 
 
 /* General Carousel Styles */
 .carousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  padding: 120px 5%;
+  box-sizing: border-box;
 }
-.carousel-header{
-  margin-bottom: 10%;
-}
+
 .carousel-images {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousal-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousal-header h2{
+  font-size: 64px;
+  font-weight: 700;
+}
+.carousal-header span{
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .carousel-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 300px; /* Optional, you can set a max-width for the carousel items */
-    margin: 0 10px;
-    text-align: center;
-}
-
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
+  flex: 0 0 100%; /* Each slide takes full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 260px;
+  height: 219px;
+} 
+.carousel-item p{
+  width: 205.17px;
+  height: 124px;
+  font-size: 14px;
 }
 
 .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 #prev {
-    left: 10px;
+  left: 10px;
 }
 
 #next {
-    right: 10px;
-}
-
-/* Make the carousel responsive for smaller screens */
-@media (max-width: 768px) {
-    .carousel-item {
-        max-width: 80%; /* Make the carousel items more narrow on smaller screens */
-    }
+  right: 10px;
 }
 
 @media (max-width: 480px) {
-    /* Ensure carousel images are displayed as a slider */
-    .carousel-images {
-        display: flex; /* Make the items slide horizontally */
-        flex-wrap: nowrap; /* Ensure items don't wrap */
-        overflow: hidden;
-    }
+  .carousel {
+      padding: 40px 16px;
+  }
 
-    .carousel-item {
-        max-width: 100%; /* Make the carousel items full width on very small screens */
-        flex: 0 0 100%; /* Ensure each carousel item takes full width */
-    }
+  .carousel-item {
+      text-align: center;
+  }
 
-    .carousel-btn {
-        font-size: 18px; /* Make navigation buttons smaller */
-        padding: 8px;
-    }
-}
-
-/* Footer */
-.footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+  .carousel-btn {
+      font-size: 16px;
+      padding: 6px;
+  }
 }
 
 
@@ -299,6 +800,7 @@ button:hover {
     padding-left: 252px;
     padding-right: 252px;
     padding-bottom: 120px;
+    margin-top: 0;
     background-color: rgba(255, 255, 255, 1);
    }
    .faq div >h2{
@@ -362,352 +864,128 @@ button:hover {
      }
 } 
   
- /* CSS for Crush-section */
- .Crush-section {
+/* General styles for debt-section */
+.debt-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  
-  background-color: #E5F1E3;
+  background-color: #e5f1e3;
   text-align: center;
 }
 
-.Crush-section > div {
+.debt-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
- 
 }
-.Crush-section div>div{
+
+.debt-text {
+  width: 617px;
+}
+
+.debt-heading {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.debt-image-wrapper {
   height: 517.55px;
   width: 479.91px;
 }
 
-.crush-p {
-  font-size: 64px;
-  font-weight: 700  ;
-  width: 617px;
-  height: 168px;
-  top: 155.66px;
-  left: 253.33px;
-  gap: 44px;
-  margin-top: 30%;
+.outer-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 517.55px;
+  height: 517.55px;
+  border: 2px solid #17c95f;
+  border-radius: 50%;
 }
 
+.inner-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 479.91px;
+  height: 479.91px;
+  border: 2px solid #17c95f;
+  border-radius: 50%;
+}
 
-.Crush-image {
+.debt-image {
   width: 517.55px;
   height: 479.91px;
-  left: 1141.83px;
   border-radius: 10px;
 }
 
-/* Responsive adjustments */
-/* @media (max-width: 768px) {
-  .Crush-section > div {
-      flex-direction: column;
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+  .debt-section {
+    margin-top: 50px;
   }
 
-  .Crush-section div p {
-      font-size: 1.2rem;
-  }
-} */
-
-@media (max-width: 480px) {
-  .Crush-section {
-      background-color: rgba(229, 241, 227, 1);
-      height: 480px ;
-      width: 360px;
-      border: 2px solid black;
-  }
-  .Crush-section div {
-    display: flex;
+  .debt-container {
     flex-direction: column;
-  }
-   
-  .Crush-section div div h2{
-    width: 296px;
-    height: 129px;
-   
-  }
-
-  .crush-p {
-    margin-top: 80%;
-    margin-left: 22%;
-      font-size: 32px;
-      line-height: 38px;
-      align-items: center;
-  }
-
-  .Crush-image {
-      width: 360px;
-      height: 237px;
-      top: 243px;
-      left: -0px;
-      margin-left: 10%;
-  }
- 
-}
-
-.circle-1, .circle-2, .circle-3 {
-  transition: all 0.3s ease;
-}
-
-/* Responsive adjustments for circles */
-/* @media (max-width: 768px) {
-  .circle-1 {
-    border: 2px solid #17C95F;
-    border-radius: 70%;
-    width: 350px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
 
-  .circle-2 {
-    border: 2px solid #17C95F;
-    border-radius: 50%;
-    width: 517.55px;
-    height: 479.91px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .debt-heading {
+    font-size: 48px;
+    width: 90%;
   }
 
-  .Crush-image {
-    max-width: 60%;
+  .outer-circle,
+  .inner-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .debt-image {
+    width: 80%;
+    height: auto;
   }
 }
 
+/* Responsive adjustments for small screens */
 @media (max-width: 480px) {
- 
+  .debt-section {
+    padding: 20px;
+    margin-top: 20px;
+  }
 
-} */
+  .debt-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  
-/* card csss header */
-/* General Reset */
-body, h1, h2, h4, p, ul {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  .debt-heading {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 20px;
+    text-align: center;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-}
+  .outer-circle,
+  .inner-circle {
+    width: 200px;
+    height: 200px;
+  }
 
-/* Section Header Styling */
-.first_header_section{
-   width: 1462px;
-   height: 62px;
-   top: 41.61px;
-   left: 229.22px;
-}
-.header-main{
-   width: 1275.72px;
-   height: 32px;
-   top: 58.95px;
-   left: 322.35px;
-   gap: 845px;
-   display: flex;
-}
-.logo{
-  width: 36.69px;
-  height: 19.3px;
-  top: -0.08px;
-}
-.header-main-div2{
-  display: flex; justify-content: space-around; width: 322.72px; height: 32px;
+  .debt-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.site-name{
-  width: 64.54px;
-  height: 21.79px;
-  top: 3.24px;
-  left: 43.34px;
-}
-.desc{
-  font-size: 10px;
+
+/* footer css*/
+
+.footer-div p{
+  font-size: 16px;
   font-weight: 400;
-  line-height: 10px;
   color:rgba(120, 127, 136, 1) ;
-}
-.apple-logo{
-  width: 32px;
-  height: 32px;
-  border-radius: 6.62px;
-  padding: 17.66px;
-  background-color:rgba(30, 31, 35, 1) ;
-}
-.dotted-line {
-  border: none; /* Remove default border */
-  border-top: 2px dotted #3498db; /* Dotted line with color */
-  width: 80%; /* Line width */
-  margin: 20px auto; /* Center the line with margins */
-}
-.section-header {
-  background-color: #f6f8fa;
-  padding: 20px;
-  text-align: center;
-}
-
-.section-header h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-.check-box{
-  height: 24px;
-  width: 1198.03px;
-  gap: 80px;
-  display: flex;
-}
-.check-box-div{
-  width: 339.98px;
-  height: 24px;
-  gap: 28.68px;
-  display: flex;
-}
-.check-box-div img{
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border: 1.5px solid rgba(23, 201, 95, 1);
-}
-.check-box-div p{
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 24px;
-}
-.section-header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Card Styling */
-.div-card{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.card {
-  display: flex;
-  
-  align-items: center;
-  flex-direction: row;
-  max-width: 200px;
-}
-
-.card img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.card h4 {
-  font-size: 1rem;
-  color: #555;
-  text-align: center;
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 1024px) {
-  .section-header-content {
-      justify-content: center;
-  }
-
-  .section-header h2 {
-      font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .section-header h2 {
-      font-size: 1.5rem;
-  }
-
-  .card img {
-      max-width: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section-header-content {
-      flex-direction: column;
-      gap: 10px;
-  }
-
-  .section-header h2 {
-      font-size: 1.3rem;
-  }
-
-  .card img {
-      max-width: 100px;
-  }
-
-  .card h4 {
-      font-size: 0.9rem;
-  }
-}
-
-/* General styles for the second_header_uppar section */
-.second_header_uppar {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  gap: 20px; /* Spacing between flex items */
-  background-color: #f0c7c7;
-}
-
-/* Styling for child div elements */
-.second_header_uppar div {
-  flex: 1 1 30%; /* Each child takes 30% width and can shrink/grow */
-  text-align: center; /* Center-align content */
-}
-
-.second_header_uppar div img {
-  max-width: 40%; /* Ensure the image is responsive */
-  height: auto;
-  border-radius: 10px; /* Optional: Add rounded corners to images */
-}
-
-/* Responsive design for tablets and smaller devices */
-@media (max-width: 768px) {
-  .second_header_uppar {
-      flex-direction: column; /* Stack items vertically */
-      text-align: center; /* Center-align text for all children */
-  }
-
-  .second_header_uppar div {
-      flex: 1 1 100%; /* Each child takes full width */
-  }
-}
-
-/* Additional styles for smaller devices (mobile-first approach) */
-@media (max-width: 480px) {
-  .second_header_uppar {
-      padding: 10px; /* Reduce padding on smaller screens */
-      gap: 10px; /* Reduce gap between items */
-  }
-
-  .second_header_uppar div {
-      padding: 10px; /* Add some spacing inside each child */
-  }
-
-  .second_header_uppar div img {
-      border-radius: 5px; /* Smaller rounded corners for small screens */
-  }
 }
