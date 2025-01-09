@@ -1,0 +1,24 @@
+The report highlights the implementation of event tracking using Google Tag Manager (GTM) to monitor user interactions on a website. Two tags were created and one trigger.
+Tag 1 is tracks click on an "Apply now" button.
+Tag2 is configures GA4 analytics for the website's landing page
+A trigger was also set up to fire an event whenever the "Apply now" button is clicked. 
+
+Tags Configuration:
+
+Tag 1: Apply Button Click Tracking
+Tag Name: Apply Button Click Event
+Tag Type: Google Analytics GA4 Event Tag
+Event Name: apply_button_click
+Configuration Tag: Linked to the existing GA4 configuration.
+
+Tag 2: GA4 Landing Page View
+Tag Name: GA4 Page View Tracking
+Tag Type: GA4 Configuration Tag
+Measurement ID: G-TMSKZ398Z1.
+Trigger: All Pages Trigger
+
+Trigger Configuration:
+Trigger Name: Apply Button Click
+Trigger Type: Click – All Elements
+Conditions:
+All clicks matches class "apply-btn"
